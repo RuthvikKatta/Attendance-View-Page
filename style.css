@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+.menu {
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    position: fixed;
+    top: 0px;
+}
+
+button {
+    background: #ba68c8;
+    border-radius: 20px;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    margin-block: 1.5rem;
+    transition: scale 250ms ease-in-out;
+}
+
+button:hover {
+    scale: 1.05;
+}
+
+button:active {
+    background: #ec82ff;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: hsla(154, 100%, 76%, 1);
+    background: linear-gradient(90deg, hsla(154, 100%, 76%, 1) 0%, hsla(234, 100%, 83%, 1) 50%, hsla(288, 100%, 81%, 1) 100%);
+    background: -moz-linear-gradient(90deg, hsla(154, 100%, 76%, 1) 0%, hsla(234, 100%, 83%, 1) 50%, hsla(288, 100%, 81%, 1) 100%);
+    background: -webkit-linear-gradient(90deg, hsla(154, 100%, 76%, 1) 0%, hsla(234, 100%, 83%, 1) 50%, hsla(288, 100%, 81%, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#84FFC9", endColorstr="#AAB2FF", GradientType=1);
+}
+
+.display {
+    display: flex;
+    width: 95%;
+}
+
+table {
+    z-index: 2;
+    border-collapse: collapse;
+    border-spacing: 0;
+    box-shadow: 0px 0px 15px 1px rgba(64, 64, 64, .7);
+    border-radius: 12px 12px 5px 5px;
+    overflow: hidden;
+    font-size: 15px;
+    margin-block:7rem 2rem;
+}
+
+#header>th {
+    border-right: 1px solid rgba(237, 237, 237, 0.407);
+}
+
+#header>th:last-child {
+    border: none;
+}
+
+td,
+th {
+    padding: 15px 20px;
+    text-align: center;
+}
+
+th {
+    background-color: #ba68c8;
+    color: #fafafa;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+tr {
+    width: 100%;
+    background-color: #fafafa;
+    font-weight: 300;
+}
+
+tr:nth-child(even) {
+    background-color: #eeeeee;
+}
+
+::-webkit-scrollbar{
+    appearance: none;
+    width: 0.75rem;
+    background-color: white;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-track{
+    width: 0.75rem;
+}
+::-webkit-scrollbar-thumb{
+    background: #ed84ff;
+    border-radius: 10px;
+}
+.download{
+    margin-bottom:1rem; 
+    justify-content:right;
+    width: 95%;
+    display: none;
+}
+.download.visible{
+    display: block;
+}
+.download > button{
+    float: right;
+}
