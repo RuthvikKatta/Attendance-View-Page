@@ -16,6 +16,9 @@
         <button id="NFT">Get Attendance of Non FastTrack</button>
     </div>
     <div class="display">
+        <div class="loader">
+            <div class="generate">Generating</div>
+        </div>
         <table id="display">
             <tr id="header">
             </tr>
@@ -60,7 +63,7 @@
         "20911A3512": "Baridu Vishal",
         "20911A3513": "B Shreya",
         "20911A3514": "Bathula Nithin Sai",
-        "20911A3515": "B SaVinay Reddy",
+        "20911A3515": "B Savinay Reddy",
         "20911A3516": "Burugu Rahul",
         "20911A3517": "Ch Rahul",
         "20911A3518": "Chepyala Tejas",
@@ -89,7 +92,7 @@
         "20911A3541": "M Sarfaraz Ali",
         "20911A3542": "Mokka Vijay Kumar",
         "20911A3543": "M Rajesh Chandar Lal",
-        "20911A3544": "Myakala Sudhakar",
+        "20911A3544": "M Chandra Lekha",
         "20911A3545": "Babburi Keerthana",
         "20911A3546": "P Vamshi Kumar Goud",
         "20911A3547": "P Dinesh Kumar",
@@ -106,95 +109,104 @@
         "20911A3558": "Swathi Thakur",
         "20911A3559": "Yelamaddi Keerthi",
         "20911A3560": "Zaib Unnisa Nayeem",
-        "20911A3561": "BHARGAV AILAPURAM",
-        "20911A3562": "Thumu chaitanya ",
-        "20911A3563": "Aravind Gadila ",
+        "20911A3561": "Ailapuram Bhargav",
+        "20911A3562": "T Chaitanya Babu",
+        "20911A3563": "Aravind Gadila",
         "20911A3564": "Avancha Sanjana",
-        "20911A3565": "AYUSH KUMAR SHARMA ",
-        "20911A3566": "Bhuvan boyina ",
-        "20911A3567": "Vinay reddy ",
-        "20911A3568": "Pavan Bavirisetty ",
-        "20911A3569": "B.chandana Reddy",
-        "20911A3570": "Bhukya saritha",
-        "20911A3571": "Veda swaroopa Challa",
-        "20911A3572": "Srikari Rallabandi",
+        "20911A3565": "Ayush Kumar Sharma",
+        "20911A3566": "B Sri Bhuvan",
+        "20911A3567": "V Vinay Reddy",
+        "20911A3568": "Pavan Kumar",
+        "20911A3569": "B Chandana",
+        "20911A3570": "Bhukya Saritha",
+        "20911A3571": "C Veda Swaroopa",
+        "20911A3572": "R Srikari",
         "20911A3573": "D Kethana",
-        "20911A3574": "Darna Rishi",
-        "20911A3575": "Devarshetty Janardhan ",
-        "20911A3576": "Engala Guru prakash ",
-        "20911A3577": "G Aishwarya ",
-        "20911A3578": "G Meghana ",
+        "20911A3574": "D Rishi",
+        "20911A3575": "D Janardhan",
+        "20911A3576": "E Guru Prakash",
+        "20911A3577": "G Aishwarya",
+        "20911A3578": "G Meghana",
         "20911A3579": "G Rishika Sharon",
-        "20911A3580": "G.shiva chaitanya",
-        "20911A3581": "Mahesh",
-        "20911A3582": "Gannu Sravan Reddy",
-        "20911A3584": "Sai Phanidhar ",
-        "20911A3585": "Gujjeri Rohan Raj",
-        "20911A3586": "G RAMBABU ",
-        "20911A3587": "HAFSAH",
-        "20911A3588": "Sharath Kumar indrapally ",
-        "20911A3589": "K Akshita",
-        "20911A3590": "K NIKHIL ",
-        "20911A3591": "Karthikeya barla",
-        "20911A3592": "Kashetty Lohith kumar",
-        "20911A3593": "K.Sai Harshini",
-        "20911A3594": "Katta Ruthvik ",
-        "20911A3595": "Divya Kolupula",
-        "20911A3596": "K. Saketh Raja ",
-        "20911A3597": "Nikitha reddy ",
-        "20911A3598": "Kairamkonda Nithin ",
-        "20911A3599": "Malyala sriman ",
-        "20911A35A0": "Maskuri nithin kumar ",
-        "20911A35A1": "Mohammed Abdul Muqthadeer",
-        "20911A35A2": "S Manohar Reddy ",
-        "20911A35A3": "P Snigdha ",
-        "20911A35A4": "Kalpana",
-        "20911A35A5": "P.Rithika",
-        "20911A35A6": "Patlolla neha reddy",
-        "20911A35A7": "Peechari Shanmukh Reddy",
-        "20911A35A8": "Pulimi Yashwanth Kumar Reddy ",
-        "20911A35A9": "RK Ashwjny",
-        "20911A35B0": "R chandrahas",
-        "20911A35B1": "R Ratan kumar ",
+        "20911A3580": "G Shiva Chaitanya",
+        "20911A3581": "G Mahesh",
+        "20911A3582": "G Sravan Reddy",
+        "20911A3584": "G Sai Phanidhar",
+        "20911A3585": "G Rohan Raj",
+        "20911A3586": "Gunji Rambabu",
+        "20911A3587": "Hafsah",
+        "20911A3588": "I Sharath Kumar",
+        "20911A3589": "K Akshitha",
+        "20911A3590": "K Nikhil",
+        "20911A3591": "B Karthikeya",
+        "20911A3592": "K Lohith Kumar",
+        "20911A3593": "K Harshini",
+        "20911A3594": "Katta Ruthvik",
+        "20911A3595": "K Divya",
+        "20911A3596": "K Saketh Raja",
+        "20911A3597": "K Nikitha",
+        "20911A3598": "K Nithin",
+        "20911A3599": "Malyala Sriman",
+        "20911A35A0": "M Nithin Kumar",
+        "20911A35A1": "M Abdul Muqthadeer",
+        "20911A35A2": "S Manohar Reddy",
+        "20911A35A3": "P Snigdha",
+        "20911A35A4": "P Kalpana",
+        "20911A35A5": "P Rithika",
+        "20911A35A6": "P Neha Reddy",
+        "20911A35A7": "P Shanmukh Reddy",
+        "20911A35A8": "P Yashwanth Kumar",
+        "20911A35A9": "R K Ashwin",
+        "20911A35B0": "R Chandrahas",
+        "20911A35B1": "R Ratan Kumar",
         "20911A35B2": "Sahil Tamang",
-        "20911A35B3": "Sathvika Veludandi ",
-        "20911A35B4": "SHADRACH EMMANUEL ",
-        "20911A35B5": "Abhinav Subburu ",
-        "20911A35B6": "Rohith suryaneni ",
-        "20911A35B7": "THURPU PRANEETH REDDY",
-        "20911A35B8": "V K MADHAN",
-        "20911A35B9": "Sai ram Vadlakonda",
-        "20911A35C0": "Srujan",
+        "20911A35B3": "V Sathvika",
+        "20911A35B4": "Shadrach Emmanuel",
+        "20911A35B5": "Subburu Abhinav",
+        "20911A35B6": "S Rohith",
+        "20911A35B7": "T Praneeth Reddy",
+        "20911A35B8": "V K Madhan",
+        "20911A35B9": "V Sai Ram",
+        "20911A35C0": "Vinjamuri Srujan",
         "21915A3501": "B Jyothi Basu",
         "21915A3502": "Ballari Madhuri",
         "21915A3503": "B Anjali",
         "21915A3504": "Chava Rajesh",
         "21915A3505": "E Soujanya",
         "21915A3506": "K Chithra",
-        "21915A3507": "Naresh Kuruva ",
-        "21915A3508": "LAKAVATH MURALI ",
-        "21915A3509": "Rahul M",
-        "21915A3510": "Owais",
-        "21915A3511": "P.karthik",
+        "21915A3507": "Kuruva Naresh",
+        "21915A3508": "L Murali",
+        "21915A3509": "M Rahul",
+        "21915A3510": "Owais Hussian",
+        "21915A3511": "Premaram Karthik",
         "21915A3512": "Anil",
     };
 
     var data = {};
+    const displayTable = document.getElementById('display');
 
-    document.getElementById('FT').addEventListener('click', function () {
+    function visible() {
         document.querySelector('.download').classList.add('visible');
+        let loader = document.querySelector('.loader');
+        loader.style.visibility = "hidden";
+    }
+    
+    document.getElementById('FT').addEventListener('click', function () {
+        document.querySelector('.loader').style.visibility = "visible";
         const studentUpdate = ref(database, `Students/FastTrack`);
         onValue(studentUpdate, (snapshot) => {
             data = snapshot.val();
             display(data);
+            visible();
         });
     })
     document.getElementById('NFT').addEventListener('click', function () {
-        document.querySelector('.download').classList.add('visible');
+        document.querySelector('.loader').style.visibility = "visible";
         const studentUpdate = ref(database, `Students/Non FastTrack`);
         onValue(studentUpdate, (snapshot) => {
             data = snapshot.val();
             display(data);
+            visible();
         });
     })
 
@@ -215,7 +227,6 @@
             headerRow.appendChild(subHeader);
         }
 
-        const displayTable = document.getElementById('display');
         var rows = displayTable.getElementsByTagName("tr");
         for (var i = rows.length - 1; i > 0; i--) {
             if (rows[i].getElementsByTagName("th").length > 0) {
@@ -252,14 +263,14 @@
         displayTable.deleteRow(rows.length - 1);
     }
 
-    function html_table_to_excel(type){
+    function html_table_to_excel(type) {
         var data = document.getElementById('display');
-        var file = XLSX.utils.table_to_book(data, {sheet: "sheet1"});
+        var file = XLSX.utils.table_to_book(data, { sheet: "sheet1" });
         XLSX.write(file, { bookType: type, bookSST: true, type: 'base64' });
         XLSX.writeFile(file, 'AI Attendance Report.' + type);
     }
     const export_button = document.getElementById('downloadData');
-    export_button.addEventListener('click', () =>  {
+    export_button.addEventListener('click', () => {
         html_table_to_excel('xlsx');
     });
 </script>
