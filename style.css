@@ -46,10 +46,11 @@ body {
     filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#84FFC9", endColorstr="#AAB2FF", GradientType=1);
 }
 
-.display {
+.displayTable {
     display: flex;
     overflow-x: auto;
     min-height: 85vh;
+    width: min(95%,1425px);
     border-radius: 12px 12px 5px 5px;
     position: relative;
 }
@@ -58,12 +59,14 @@ body {
     position: absolute;
     display: grid;
     place-items: center;
-    width: 95%;
-    height: 85vh;
-    bottom: 0px;
+    inset: 0px;
     border-radius: 12px 12px 5px 5px;
     background-color: rgba(0, 0, 0, 0.179);
     visibility: hidden;
+}
+
+#table{
+    width: 100%;
 }
 
 .generate{
@@ -114,6 +117,7 @@ th {
     color: #fafafa;
     font-weight: 500;
     text-transform: uppercase;
+    width: max-content;
 }
 
 tr {
@@ -143,12 +147,12 @@ tr:nth-child(even) {
 }
 
 .download {
-    margin-bottom: 1rem;
-    justify-content: right;
-    width: 95%;
-    display: none;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    visibility: hidden;
 }
 
 .download.visible {
-    display: block;
+    visibility: visible;
 }
